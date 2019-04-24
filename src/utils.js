@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export function getIcons(icon) {
 	switch (icon) {
@@ -26,15 +26,20 @@ export function getIcons(icon) {
 	}
 }
 
-export function getWeather(url) {
-	fetch(url)
-		.then(results => results.json())
-		.then(data => {
-			console.log(data)
-			getIcons(data.weather[0].icon)
-			// setWeather(data)
-			return data
-		})
+export function useFetch(url) {
+	const [data, setData] = useState([])
+	const [loading, setLoading] = useState(true)
+	async function fetchUrl() {
+		const response = await fetch(url)
+		const json = await response.json()
+		console.log(json)
+		setData(json)
+		setLoading(false)
+	}
+	useEffect(() => {
+		fetchUrl()
+	}, [])
+	return [data, loading]
 }
 
 /**

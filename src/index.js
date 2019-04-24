@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { getIcons, getWeather } from './utils'
+import { getIcons, useFetch } from './utils'
 
 const Title = styled.h4`
 	padding: 10px;
@@ -13,30 +13,14 @@ const WeatherContainer = styled.div`
 	align-items: center;
 `
 
-const Weather = ({ zip, APIKEY }) => {
-	const [weather, setWeather] = useState()
-	useEffect(() => {
-		if (!zip && !APIKEY) throw 'Please add a "zip" and "APIKEY" prop'
-		if (!zip) throw 'Please Input a prop "zip"'
-		if (!APIKEY) throw 'Please get an "APIKEY" from https://openweathermap.org/api'
+function Weather({ zip, APIKEY }) {
+	const [weather, loading] = useFetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${APIKEY}`)
 
-		fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${APIKEY}`)
-			.then(results => results.json())
-			.then(data => {
-				if (data.cod === '404' || data.cod === 401) {
-					throw data.message
-				} else {
-					setWeather(data)
-				}
-			})
-			.catch(error => {
-				console.log(error)
-			})
-		return () => {}
-	}, [])
 	return (
 		<React.Fragment>
-			{weather && (
+			{loading ? (
+				<React.Fragment>...</React.Fragment>
+			) : (
 				<WeatherContainer>
 					<Title>{weather.name}</Title>
 					{getIcons(weather.weather[0].icon)}
