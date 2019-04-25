@@ -7,6 +7,8 @@ export function getIcons(icon) {
 			return sun
 		case '02d':
 		case '02n':
+		case '03d':
+		case '03n':
 		case '04d':
 		case '04n':
 			return cloud
@@ -19,6 +21,12 @@ export function getIcons(icon) {
 		case '11n':
 		case '11d':
 			return cloudLightning
+		case '13n':
+		case '13d':
+			return cloudSnow
+		case '50n':
+		case '50d':
+			return wind
 
 		default:
 			console.warn('no icon for case:', icon)
@@ -33,6 +41,9 @@ export function useFetch(url) {
 		const response = await fetch(url)
 		const json = await response.json()
 		console.log(json)
+		if (json.cod === 401 || cod === '404') {
+			throw json.message
+		}
 		setData(json)
 		setLoading(false)
 	}

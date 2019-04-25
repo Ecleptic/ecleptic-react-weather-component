@@ -14,7 +14,15 @@ const WeatherContainer = styled.div`
 `
 
 function Weather({ zip, APIKEY }) {
-	const [weather, loading] = useFetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${APIKEY}`)
+	if (!zip) console.error('Please add a us zip code')
+	if (!APIKEY)
+		console.error(
+			'Please add an api key from https://openweathermap.org/api'
+		)
+
+	const [weather, loading] = useFetch(
+		`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${APIKEY}`
+	)
 
 	return (
 		<React.Fragment>
