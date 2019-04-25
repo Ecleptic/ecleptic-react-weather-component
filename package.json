@@ -1,6 +1,6 @@
 {
 	"name": "ecleptic-react-weather-component",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Just a basic React Weather Component",
 	"scripts": {
 		"start": "webpack --watch",
@@ -19,7 +19,7 @@
 	"main": "build/index.js",
 	"repository": {
 		"type": "git",
-		"url": "<git_repo_url>"
+		"url": "https://github.com/Ecleptic/ecleptic-react-weather-component"
 	},
 	"dependencies": {
 		"react": "^16.8.6",

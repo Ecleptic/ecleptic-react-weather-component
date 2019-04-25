@@ -40,7 +40,6 @@ export function useFetch(url) {
 	async function fetchUrl() {
 		const response = await fetch(url)
 		const json = await response.json()
-		console.log(json)
 		if (json.cod === 401 || cod === '404') {
 			throw json.message
 		}
@@ -55,7 +54,7 @@ export function useFetch(url) {
 
 /**
  * 01d = sun -clear sky
- * 02d - somesunbehind clouds = few clouds
+ * 02d - some sun behind clouds = few clouds
  * 03 - cloud -scattered clouds
  * 04 clouds again
  * 09 - lots of rain
