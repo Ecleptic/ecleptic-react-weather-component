@@ -3,8 +3,8 @@
 	"version": "1.0.3",
 	"description": "Just a basic React Weather Component",
 	"scripts": {
-		"start": "webpack --watch",
-		"build": "webpack",
+		"start": "webpack-dev-server --open --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
 	},
@@ -21,27 +21,33 @@
 		"type": "git",
 		"url": "https://github.com/Ecleptic/ecleptic-react-weather-component"
 	},
-	"dependencies": {},
 	"peerDependencies": {
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"styled-components": "^4.2.0"
 	},
 	"devDependencies": {
-		"webpack": "^4.30.0",
-		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
-		"@storybook/addon-actions": "^5.0.10",
-		"@storybook/addon-links": "^5.0.10",
-		"@storybook/addons": "^5.0.10",
-		"@storybook/react": "^5.0.10",
+		"@babel/core": "^7.4.4",
+		"@babel/preset-env": "^7.4.4",
+		"@storybook/addon-actions": "^5.0.11",
+		"@storybook/addon-links": "^5.0.11",
+		"@storybook/addons": "^5.0.11",
+		"@storybook/react": "^5.0.11",
 		"babel-cli": "^6.26.0",
-		"babel-loader": "^8.0.5",
+		"babel-loader": "^8.0.6",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
+		"clean-webpack-plugin": "^2.0.2",
 		"eslint": "^5.16.0",
 		"eslint-plugin-react-hooks": "^1.6.0",
+		"html-webpack-plugin": "^3.2.0",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"styled-components": "^4.2.0",
+		"webpack": "^4.32.0",
 		"webpack-bundle-analyzer": "^3.3.2",
-		"webpack-cli": "^3.3.1"
+		"webpack-cli": "^3.3.1",
+		"webpack-dev-server": "^3.4.1",
+		"webpack-merge": "^4.2.1"
 	}
 }
