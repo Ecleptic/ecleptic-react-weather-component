@@ -1,6 +1,6 @@
 {
 	"name": "ecleptic-react-weather-component",
-	"version": "1.0.3",
+	"version": "2.0.0",
 	"description": "Just a basic React Weather Component",
 	"scripts": {
 		"start": "webpack-dev-server --open --config webpack.dev.js",
