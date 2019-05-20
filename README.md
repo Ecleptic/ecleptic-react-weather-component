@@ -28,11 +28,17 @@ function App(){
 export default App
 ```
 
+## [2.0.1] - 2019-05-20
+
+### Changed Build target
+
+- Webpack was originally building to an html file for some reason. (Don't copy & paste docs code kids) Changed it back to building to an index.js and that worked.
+
 ## [2.0.0] - 2019-05-20
 
-### Created Peer depencies
+### Created Peer dependencies
 
-- Instead of being Bundled, React,React-Dom, & styled-components are now peer dependencies instead
+- Instead of being Bundled, React, React-Dom, & styled-components are now peer dependencies instead
 
 ## [1.0.0] - 2019-04-24
 
