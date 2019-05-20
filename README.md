@@ -1,6 +1,6 @@
 # ecleptic-react-weather-component
 
-[![npm (scoped)](https://img.shields.io/npm/v/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component)
+[![npm (scoped)](https://img.shields.io/npm/v/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![install size](https://packagephobia.now.sh/badge?p=ecleptic-react-weather-component)](https://packagephobia.now.sh/result?p=ecleptic-react-weather-component)
 
 Just learning how to build NPM packages
 

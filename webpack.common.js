@@ -9,24 +9,18 @@ module.exports = {
 		app: './src/index.js'
 	},
 	plugins: [
-		// new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
-		new CleanWebpackPlugin(),
-		new HtmlWebpackPlugin({
-			title: 'Production'
-		}),
-		new BundleAnalyzerPlugin()
+		new CleanWebpackPlugin()
+		// new HtmlWebpackPlugin({
+		// 	title: 'Production'
+		// })
+		// new BundleAnalyzerPlugin()
 	],
 	output: {
-		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'build'),
+		filename: 'index.js',
+		libraryTarget: 'commonjs2'
 	},
-	// entry: './src/index.js',
-	// output: {
-	// 	path: path.resolve(__dirname, 'build'),
-	// 	filename: 'index.js',
-	// 	libraryTarget: 'commonjs2'
-	// },
-	// mode: 'production',
+
 	module: {
 		rules: [
 			{
