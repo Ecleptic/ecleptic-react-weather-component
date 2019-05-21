@@ -10,7 +10,6 @@ Required Props: `APIKEY`, `ZIP` Required Peer Dependencies:
 
 - [React](https://www.npmjs.com/package/react)
 - [React Dom](https://www.npmjs.com/package/react-dom)
-- [Styled Components](https://www.npmjs.com/package/styled-components)
 
 usage:
 
@@ -28,6 +27,12 @@ function App(){
 export default App
 ```
 
+## [2.0.1] - 2019-05-21
+
+### Removed Styled Components from dependency tree
+
+- Styled components was doing very small layout changes. It is better to just have some inline styling in the JSX than have a large library as a peer dependency.
+
 ## [2.0.1] - 2019-05-20
 
 ### Changed Build target
@@ -38,7 +43,7 @@ export default App
 
 ### Created Peer dependencies
 
-- Instead of being Bundled, React, React-Dom, & styled-components are now peer dependencies instead
+- Instead of being Bundled, React, React-Dom, & Styled-Components are now peer dependencies instead.
 
 ## [1.0.0] - 2019-04-24
 
