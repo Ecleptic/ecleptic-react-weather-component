@@ -1,6 +1,6 @@
 {
 	"name": "ecleptic-react-weather-component",
-	"version": "2.1.0",
+	"version": "2.1.0-beta.1",
 	"description": "Just a basic React Weather Component",
 	"scripts": {
 		"build": "webpack --config webpack.prod.js",
@@ -26,12 +26,12 @@
 		"react-dom": "^16.8.6"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.4.4",
-		"@babel/preset-env": "^7.4.4",
-		"@storybook/addon-actions": "^5.0.11",
-		"@storybook/addon-links": "^5.0.11",
-		"@storybook/addons": "^5.0.11",
-		"@storybook/react": "^5.0.11",
+		"@babel/core": "^7.4.5",
+		"@babel/preset-env": "^7.4.5",
+		"@storybook/addon-actions": "^5.1.3",
+		"@storybook/addon-links": "^5.1.3",
+		"@storybook/addons": "^5.1.3",
+		"@storybook/react": "^5.1.3",
 		"babel-cli": "^6.26.0",
 		"babel-loader": "^8.0.6",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",

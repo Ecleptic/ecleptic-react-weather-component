@@ -8,13 +8,14 @@ const titleStyles = {
 	margin: '0'
 }
 
-const weatherContainerStyles = {
-	display: 'flex',
-	alignItems: 'center'
-}
-
-function Weather({ zip, APIKEY }) {
+function Weather({ zip, APIKEY, orderFlipped }) {
 	const [weather, setWeather] = useState()
+
+	const weatherContainerStyles = {
+		display: 'flex',
+		alignItems: 'center',
+		flexDirection: `${orderFlipped ? 'row-reverse' : 'row'}`
+	}
 	useEffect(() => {
 		if (!zip) {
 			console.error('Please add a us zip code')

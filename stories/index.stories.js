@@ -7,7 +7,7 @@ import Weather from '../src/index'
 
 storiesOf('Weather - Passing', module)
 	.add('Using Zip-94016 & API', () => <Weather zip="94016" APIKEY={process.env.APIKEY} />)
-	.add('Using Zip-10001 & API', () => <Weather zip="10001" APIKEY={process.env.APIKEY} />)
+	.add('Using Zip-10001 & API', () => <Weather zip="10001" APIKEY={process.env.APIKEY} orderFlipped={true} />)
 
 storiesOf('Weather - Failing', module)
 	.add('Using Zip & incorrect API', () => <Weather zip="10001" APIKEY="thisiswrong" />)
