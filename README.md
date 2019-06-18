@@ -1,6 +1,6 @@
 # [ecleptic-react-weather-component](https://www.npmjs.com/package/ecleptic-react-weather-component)
 
-[![npm (scoped)](https://img.shields.io/npm/v/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![install size](https://packagephobia.now.sh/badge?p=ecleptic-react-weather-component)](https://packagephobia.now.sh/result?p=ecleptic-react-weather-component)
+[![npm (scoped)](https://img.shields.io/npm/v/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/ecleptic-react-weather-component.svg)](https://www.npmjs.com/package/ecleptic-react-weather-component) [![install size](https://packagephobia.now.sh/badge?p=ecleptic-react-weather-component)](https://packagephobia.now.sh/result?p=ecleptic-react-weather-component) [![Netlify Status](https://api.netlify.com/api/v1/badges/7f3c2976-ff5b-4009-ab7e-8808f85abf71/deploy-status)](https://app.netlify.com/sites/ecleptic-react-weather-component/deploys)
 
 Just learning how to build NPM packages
 
